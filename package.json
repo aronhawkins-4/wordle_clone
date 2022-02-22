@@ -1,0 +1,27 @@
+{
+  "name": "wordle_test",
+  "version": "1.0.0",
+  "description": "wordle clone",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aron Hawkins",
+  "license": "ISC",
+  "dependencies": {
+    "@sweetalert2/theme-borderless": "^5.0.10",
+    "@sweetalert2/theme-dark": "^5.0.10",
+    "@sweetalert2/theme-wordpress-admin": "^5.0.10",
+    "@sweetalert2/themes": "^5.0.10",
+    "express": "^4.17.3",
+    "jquery": "^3.6.0",
+    "kioskboard": "^2.1.0",
+    "random-words": "^1.1.2",
+    "requirejs": "^2.3.6",
+    "simple-keyboard": "^3.4.53",
+    "sweetalert": "^2.1.2",
+    "sweetalert2": "^11.4.4",
+    "virtual-keyboard": "^1.30.4"
+  },
+  "type": "module"
+}

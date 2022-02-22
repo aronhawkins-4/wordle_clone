@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/@sweetalert2/theme-dark/dark.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/virtual-keyboard/dist/css/keyboard.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/virtual-keyboard/dist/css/keyboard-previewkeyset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/virtual-keyboard/dist/css/keyboard-dark.min.css"
+    />
+    <script type="module" src="index.js"></script>
+    <script
+      type="module"
+      src="./node_modules/sweetalert2/src/sweetalert2.js"
+    ></script>
+    <!--
+      <script
+      src="./node_modules/kioskboard/dist/kioskboard-aio-2.1.0.min.js"
+    ></script>
+    -->
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/virtual-keyboard/dist/js/jquery.keyboard.js"></script>
+  </head>
+  <header>
+    <h1>Wordle Clone</h1>
+  </header>
+  <body id="body">
+    <div class="container">
+      <div id="grid">
+        <ul id="ul1">
+          <li id="li1">
+            <input
+              id="Id1"
+              class="keyboard-init-focus"
+              type="text"
+              maxlength="1"
+              autofocus
+            />
+          </li>
+          <li id="li2">
+            <input
+              id="Id2"
+              class="js-kioskboard-input"
+              data-kioskboard-type="keyboard"
+              data-kioskboard-placement="bottom"
+              type="text"
+              maxlength="1"
+            />
+          </li>
+          <li id="li3">
+            <input
+              id="Id3"
+              class="js-kioskboard-input"
+              data-kioskboard-type="keyboard"
+              data-kioskboard-placement="bottom"
+              type="text"
+              maxlength="1"
+            />
+          </li>
+          <li id="li4">
+            <input
+              id="Id4"
+              class="js-kioskboard-input"
+              data-kioskboard-type="keyboard"
+              data-kioskboard-placement="bottom"
+              type="text"
+              maxlength="1"
+            />
+          </li>
+          <li id="li5">
+            <input
+              id="Id5"
+              class="js-kioskboard-input"
+              data-kioskboard-type="keyboard"
+              data-kioskboard-placement="bottom"
+              type="text"
+              maxlength="1"
+            />
+          </li>
+        </ul>
+        <ul id="ul2">
+          <li id="li6">
+            <input
+              id="Id6"
+              class="js-kioskboard-input"
+              data-kioskboard-type="keyboard"
+              data-kioskboard-placement="bottom"
+              type="text"
+              maxlength="1"
+            />
+          </li>
+          <li id="li7">
+            <input
+              id="Id7"
+              class="js-kioskboard-input"
+              data-kioskboard-type="keyboard"
+              data-kioskboard-placement="bottom"
+              type="text"
+              maxlength="1"
+            />
+          </li>
+          <li id="li8">
+            <input
+              id="Id8"
+              class="js-kioskboard-input"
+              data-kioskboard-type="keyboard"
+              data-kioskboard-placement="bottom"
+              type="text"
+              maxlength="1"
+            />
+          </li>
+          <li id="li9">
+            <input
+              id="Id9"
+              class="js-kioskboard-input"
+              data-kioskboard-type="keyboard"
+              data-kioskboard-placement="bottom"
+              type="text"
+              maxlength="1"
+            />
+          </li>
+          <li id="li10">
+            <input
+              id="Id10"
+              class="js-kioskboard-input"
+              data-kioskboard-type="keyboard"
+              data-kioskboard-placement="bottom"
+              type="text"
+              maxlength="1"
+            />
+          </li>
+        </ul>
+        <ul id="ul3">
+          <li id="li11">
+            <input
+              id="Id11"
+              class="js-kioskboard-input"
+              data-kioskboard-type="keyboard"
+              data-kioskboard-placement="bottom"
+              type="text"
+              maxlength="1"
+            />
+          </li>
+          <li id="li12">
+            <input
+              id="Id12"
+              class="js-kioskboard-input"
+              data-kioskboard-type="keyboard"
+              data-kioskboard-placement="bottom"
+              type="text"
+              maxlength="1"
+            />
+          </li>
+          <li id="li13">
+            <input
+              id="Id13"
+              class="js-kioskboard-input"
+              data-kioskboard-type="keyboard"
+              data-kioskboard-placement="bottom"
+              type="text"
+              maxlength="1"
+            />
+          </li>
+          <li id="li14">
+            <input
+              id="Id14"
+              class="js-kioskboard-input"
+              data-kioskboard-type="keyboard"
+              data-kioskboard-placement="bottom"
+              type="text"
+              maxlength="1"
+            />
+          </li>
+          <li id="li15">
+            <input
+              id="Id15"
+              class="js-kioskboard-input"
+              data-kioskboard-type="keyboard"
+              data-kioskboard-placement="bottom"
+              type="text"
+              maxlength="1"
+            />
+          </li>
+        </ul>
+        <ul id="ul4">
+          <li id="li16">
+            <input
+              id="Id16"
+              class="js-kioskboard-input"
+              data-kioskboard-type="keyboard"
+              data-kioskboard-placement="bottom"
+              type="text"
+              maxlength="1"
+            />
+          </li>
+          <li id="li17">
+            <input
+              id="Id17"
+              class="js-kioskboard-input"
+              data-kioskboard-type="keyboard"
+              data-kioskboard-placement="bottom"
+              type="text"
+              maxlength="1"
+            />
+          </li>
+          <li id="li18">
+            <input
+              id="Id18"
+              class="js-kioskboard-input"
+              data-kioskboard-type="keyboard"
+              data-kioskboard-placement="bottom"
+              type="text"
+              maxlength="1"
+            />
+          </li>
+          <li id="li19">
+            <input
+              id="Id19"
+              class="js-kioskboard-input"
+              data-kioskboard-type="keyboard"
+              data-kioskboard-placement="bottom"
+              type="text"
+              maxlength="1"
+            />
+          </li>
+          <li id="li20">
+            <input
+              id="Id20"
+              class="js-kioskboard-input"
+              data-kioskboard-type="keyboard"
+              data-kioskboard-placement="bottom"
+              type="text"
+              maxlength="1"
+            />
+          </li>
+        </ul>
+        <ul id="ul5">
+          <li id="li21">
+            <input
+              id="Id21"
+              class="js-kioskboard-input"
+              data-kioskboard-type="keyboard"
+              data-kioskboard-placement="bottom"
+              type="text"
+              maxlength="1"
+            />
+          </li>
+          <li id="li22">
+            <input
+              id="Id22"
+              class="js-kioskboard-input"
+              data-kioskboard-type="keyboard"
+              data-kioskboard-placement="bottom"
+              type="text"
+              maxlength="1"
+            />
+          </li>
+          <li id="li23">
+            <input
+              id="Id23"
+              class="js-kioskboard-input"
+              data-kioskboard-type="keyboard"
+              data-kioskboard-placement="bottom"
+              type="text"
+              maxlength="1"
+            />
+          </li>
+          <li id="li24">
+            <input
+              id="Id24"
+              class="js-kioskboard-input"
+              data-kioskboard-type="keyboard"
+              data-kioskboard-placement="bottom"
+              type="text"
+              maxlength="1"
+            />
+          </li>
+          <li id="li25">
+            <input
+              id="Id25"
+              class="js-kioskboard-input"
+              data-kioskboard-type="keyboard"
+              data-kioskboard-placement="bottom"
+              type="text"
+              maxlength="1"
+            />
+          </li>
+        </ul>
+        <ul>
+          <li id="li26">
+            <input
+              id="Id26"
+              class="js-kioskboard-input"
+              data-kioskboard-type="keyboard"
+              data-kioskboard-placement="bottom"
+              type="text"
+              maxlength="1"
+            />
+          </li>
+          <li id="li27">
+            <input
+              id="Id27"
+              class="js-kioskboard-input"
+              data-kioskboard-type="keyboard"
+              data-kioskboard-placement="bottom"
+              type="text"
+              maxlength="1"
+            />
+          </li>
+          <li id="li28">
+            <input
+              id="Id28"
+              class="js-kioskboard-input"
+              data-kioskboard-type="keyboard"
+              data-kioskboard-placement="bottom"
+              type="text"
+              maxlength="1"
+            />
+          </li>
+          <li id="li29">
+            <input
+              id="Id29"
+              class="js-kioskboard-input"
+              data-kioskboard-type="keyboard"
+              data-kioskboard-placement="bottom"
+              ype="text"
+              maxlength="1"
+            />
+          </li>
+          <li id="li30">
+            <input
+              id="Id30"
+              class="js-kioskboard-input"
+              data-kioskboard-type="keyboard"
+              data-kioskboard-placement="bottom"
+              type="text"
+              maxlength="1"
+            />
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="button-container">
+      <button id="submit">Submit</button>
+      <!-- <button class="open">Open Keyboard</button> -->
+    </div>
+    <!-- <textarea id="keyboard" placeholder="Enter Text..."></textarea>
+    <div id="keyboard-container">
+      <script>
+        var KioskBoard;
+        KioskBoard.run(".js-kioskboard-input", {
+          keysArrayOfObjects: null,
+          keysJsonUrl:
+            "./node_modules/kioskboard/dist/kioskboard-keys-english.json",
+          theme: "dark",
+          keysNumpadArrayOfNumbers: null,
+          capsLockActive: true,
+          keysAllowSpacebar: false,
+          keysFontSize: "20px",
+          keysIconSize: "20px",
+        });
+      </script>
+    </div> -->
+    <footer>
+      <p id="attribute"><em>Made by Aron Hawkins</em></p>
+    </footer>
+  </body>
+</html>
